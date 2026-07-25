@@ -12,7 +12,7 @@ export function SiteProvider({ children }) {
 
   const fetchConfig = async () => {
     try {
-      const { data } = await axios.get(`${API}/site/config`);
+      const { data } = await axios.get(`${API}/api/site/config`);
       setConfig(data);
     } catch (e) {
       setError(e.message);

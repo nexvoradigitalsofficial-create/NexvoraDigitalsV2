@@ -677,7 +677,7 @@ export default function AdminPanel() {
   const save = async () => {
     setSaving(true);
     try {
-      await axios.put(`${API}/site/config`, localConfig);
+      await axios.put(`${API}/api/site/config`, localConfig);
       toast.success('✅ Saved!');
       await refresh();
     } catch (err) { toast.error(err.response?.data?.message || 'Save failed'); }
