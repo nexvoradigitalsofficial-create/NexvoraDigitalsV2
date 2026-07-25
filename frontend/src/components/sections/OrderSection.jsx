@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useSite } from '../../context';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 
-const API = process.env.REACT_APP_API_URL || '/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 // ─── UPI Payment Modal ────────────────────────────────────────
 function UpiModal({ config, orderId, amount, onClose, onSuccess }) {

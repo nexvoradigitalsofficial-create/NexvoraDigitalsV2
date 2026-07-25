@@ -5,7 +5,7 @@ import axios from 'axios';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-const API = process.env.REACT_APP_API_URL || '/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 const CATEGORIES = [
   { id: 'all',      label: 'All Work',          emoji: '✨' },

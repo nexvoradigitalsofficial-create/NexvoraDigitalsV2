@@ -4,7 +4,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context';
 
-const API = process.env.REACT_APP_API_URL || '/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 export default function AdminLogin() {
   const { login, isLoggedIn } = useAuth();
@@ -18,7 +18,7 @@ export default function AdminLogin() {
     e.preventDefault();
     setLoading(true);
     try {
-      const { data } = await axios.post(`${API}/api/auth/login`, form);
+      const { data } = await axios.post(`${API}/auth/login`, form);
       login(data.admin, data.token);
       toast.success(`Welcome back, ${data.admin.username}!`);
       navigate('/admin');

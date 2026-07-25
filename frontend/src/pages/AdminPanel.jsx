@@ -4,7 +4,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useAuth, useSite } from '../context';
 
-const API = process.env.REACT_APP_API_URL || '/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 const NAV = [
   { id: 'dashboard',  label: '📊 Dashboard' },
