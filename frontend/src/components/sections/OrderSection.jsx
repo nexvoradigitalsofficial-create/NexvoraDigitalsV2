@@ -12,7 +12,7 @@ function UpiModal({ config, orderId, amount, onClose, onSuccess }) {
   const [submitting, setSubmitting] = useState(false);
   const payment = config?.payment || {};
   const upiId   = payment.upiId   || 'nexvora@upi';
-  const upiName = payment.upiName || 'NexvoraDigital';
+  const upiName = payment.upiName || 'NexvoraDigitals';
   const upiLink = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(upiName)}&am=${amount}&cu=INR`;
 
   const handleSubmit = async () => {
@@ -139,7 +139,7 @@ export default function OrderSection() {
           key:         rzp.keyId,
           amount:      rzp.amount,
           currency:    rzp.currency,
-          name:        config?.brand?.name || 'NexvoraDigital',
+          name:        config?.brand?.name || 'NexvoraDigitals',
           description: selected.name,
           order_id:    rzp.orderId,
           handler: async (response) => {

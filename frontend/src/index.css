@@ -350,6 +350,11 @@ body {
   0%,100% { transform: translateY(0); }
   50%      { transform: translateY(-16px); }
 }
+@media (max-width: 768px){
+    .image-wrapper{
+      display: none;
+    }
+}
 
 /* ─── ABOUT SECTION ──────────────────────────────────────────── */
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 32px; align-items: center; }

@@ -21,7 +21,9 @@ app.use(morgan('dev'));
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://nexvora-digitals-v2.vercel.app"
+    "https://nexvora-digitals-v2.vercel.app",
+    "https://nexvoradigitals.in",
+    "https://www.nexvoradigitals.in"
   ],
   credentials: true
 }));

@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div>
           <div className="footer-logo-name">
-            {brand.name || 'NexvoraDigital'}
+            {brand.name || 'NexvoraDigitals'}
           </div>
           <p className="footer-tag">{footer.tagline || 'Creative digital solutions for modern brands.'}</p>
         </div>

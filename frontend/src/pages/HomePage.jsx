@@ -16,7 +16,7 @@ export default function HomePage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": brand.name || 'NexvoraDigital',
+    "name": brand.name || 'NexvoraDigitals',
     "description": seo.metaDescription || '',
     "url": seo.canonicalUrl || 'https://nexvoradigital.com',
     "telephone": brand.phone1 || '',
@@ -35,7 +35,7 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>{seo.siteTitle || 'NexvoraDigital – Creative Design That Sells'}</title>
+        <title>{seo.siteTitle || 'NexvoraDigitals – Creative Design That Sells'}</title>
         <meta name="description" content={seo.metaDescription || ''} />
         <meta name="keywords" content={seo.metaKeywords || ''} />
         <meta property="og:title" content={seo.siteTitle || 'NexvoraDigital'} />

@@ -234,7 +234,7 @@ function PaymentEditor({ data, onChange }) {
         {d.upiEnabled && (
           <>
             <TF label="UPI ID" value={d.upiId} onChange={v => onChange({ ...d, upiId: v })} placeholder="yourname@upi" hint="e.g. nexvora@paytm or 9949742547@ybl" />
-            <TF label="UPI Name (shown to customer)" value={d.upiName} onChange={v => onChange({ ...d, upiName: v })} placeholder="NexvoraDigital" />
+            <TF label="UPI Name (shown to customer)" value={d.upiName} onChange={v => onChange({ ...d, upiName: v })} placeholder="NexvoraDigitals" />
             <TF label="QR Code Image URL" value={d.upiQrImage} onChange={v => onChange({ ...d, upiQrImage: v })} hint="Upload your UPI QR to Cloudinary/ImgBB and paste the link here" />
             {d.upiQrImage && (
               <div style={{ marginTop: 8, textAlign: 'center' }}>
@@ -636,7 +636,7 @@ function Dashboard() {
 
   return (
     <div>
-      <div className="admin-header"><h1>Dashboard</h1><p>NexvoraDigital overview</p></div>
+      <div className="admin-header"><h1>Dashboard</h1><p>NexvoraDigitals overview</p></div>
       <div className="admin-grid" style={{ marginBottom: 24 }}>
         {statCards.map(s => (
           <div key={s.label} className="stat-card">
