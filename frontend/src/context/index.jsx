@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 
-const API = process.env.REACT_APP_API_URL || '/api';
+const API = `${process.env.REACT_APP_API_URL}/api`;
 
 const SiteContext = createContext(null);
 
@@ -12,7 +12,7 @@ export function SiteProvider({ children }) {
 
   const fetchConfig = async () => {
     try {
-      const { data } = await axios.get(`${API}/api/site/config`);
+      const { data } = await axios.get(`${API}/site/config`);
       setConfig(data);
     } catch (e) {
       setError(e.message);

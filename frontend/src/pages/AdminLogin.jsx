@@ -18,7 +18,7 @@ export default function AdminLogin() {
     e.preventDefault();
     setLoading(true);
     try {
-      const { data } = await axios.post(`${API}/auth/login`, form);
+      const { data } = await axios.post(`${API}/api/auth/login`, form);
       login(data.admin, data.token);
       toast.success(`Welcome back, ${data.admin.username}!`);
       navigate('/admin');
